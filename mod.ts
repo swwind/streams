@@ -1,7 +1,7 @@
 /**
  * @module
  *
- * Make ReadableStream API more like functional
+ * Make ReadableStream API more functional
  *
  * # Example
  *
