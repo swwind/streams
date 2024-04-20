@@ -146,7 +146,10 @@ export class Stream<T> {
    * const max = stream.clone().reduce(Math.max, -Infinity);
    * ```
    */
-  async reduce<R>(fn: (prev: R, current: T) => R | Promise<R>, init: R) {
+  async reduce<R>(
+    fn: (prev: R, current: T) => R | Promise<R>,
+    init: R
+  ): Promise<R> {
     for await (const item of this.values()) {
       init = await fn(init, item);
     }
