@@ -29,3 +29,5 @@ export { enumerate } from "./src/transform/enumerate.ts";
 export { take, takeWhile } from "./src/transform/take.ts";
 export { skip, skipWhile } from "./src/transform/skip.ts";
 export { intersperse, intersperseWith } from "./src/transform/intersperse.ts";
+export { chunks, chunkBy } from "./src/transform/chunks.ts";
+export { windows } from "./src/transform/windows.ts";
